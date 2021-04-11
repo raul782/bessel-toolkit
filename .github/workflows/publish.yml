@@ -22,6 +22,8 @@ jobs:
         with:
           node-version: '${{ steps.nvm.outputs.nodever }}'
           registry-url: https://npm.pkg.github.com/
+      - name: Update npm_token
+        run: sed -e "s/NPM_TOKEN/${NPM_TOKEN}/" .npmrc
       - name: Configure Git User
         run: |
           git config --global user.email "bessel@besselstudio.com"

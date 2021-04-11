@@ -32,9 +32,8 @@ jobs:
           echo "//npm.pkg.github.com/:always-auth=true" >> .npmrc
           echo "//npm.pkg.github.com/:_authToken=$NPM_TOKEN" >> .npmrc
           npm whoami
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Install dependencies
         run: yarn install
-      env:
-        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
       - run: yarn lerna publish --conventional-commits --yes

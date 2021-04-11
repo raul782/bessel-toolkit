@@ -77,7 +77,7 @@ it("renders ConnectModal correctly", () => {
     }
 
     .c0 {
-      min-width: 360px;
+      min-width: 320px;
     }
 
     .c10 {
@@ -322,7 +322,7 @@ it("renders ConnectModal correctly", () => {
     @media screen and (min-width:370px) {
       .c1 {
         width: auto;
-        min-width: 360px;
+        min-width: 320px;
         max-width: 100%;
       }
     }
@@ -529,7 +529,7 @@ it("renders ConnectModal correctly", () => {
               xmlns="http://www.w3.org/2000/svg"
             >
               <g
-                clip-path="url(#clip0)"
+                clip-path="url(#clip-trustwallet)"
               >
                 <path
                   d="M48.0048 96.0097C74.5172 96.0097 96.0097 74.5172 96.0097 48.0048C96.0097 21.4925 74.5172 0 48.0048 0C21.4925 0 0 21.4925 0 48.0048C0 74.5172 21.4925 96.0097 48.0048 96.0097Z"
@@ -542,7 +542,7 @@ it("renders ConnectModal correctly", () => {
               </g>
               <defs>
                 <clippath
-                  id="clip0"
+                  id="clip-trustwallet"
                 >
                   <rect
                     fill="white"

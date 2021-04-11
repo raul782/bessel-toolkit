@@ -19,12 +19,22 @@ jobs:
         with:
           node-version: 14.x
           registry-url: https://npm.pkg.github.com/
-      - name: Update npm_token
-        run: sed -e "s/NPM_TOKEN/${NPM_TOKEN}/" .npmrc
       - name: Configure Git User
         run: |
           git config --global user.email "bessel@besselstudio.com"
           git config --global user.name "@$GITHUB_ACTOR"
+      - name: Authenticate with Registry
+        run: |
+          yarn logout
+          echo /dev/null > .npmrc
+          echo "@besselstudio:registry=https://npm.pkg.github.com/" > .npmrc
+          echo "registry=https://npm.pkg.github.com/" >> .npmrc
+          echo "//npm.pkg.github.com/:always-auth=true" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=$NPM_TOKEN" >> .npmrc
+          npm whoami
       - name: Install dependencies
         run: yarn install
+      env:
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - run: yarn lerna publish --conventional-commits --yes

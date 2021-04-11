@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.22.0 (2021-04-11)
+
+
+
+## 0.21.1 (2021-04-11)
+
+
+### Bug Fixes
+
+* Accordion menu stuck at active state ([#57](https://github.com/besselstudio/bessel-toolkit/tree/main/packages/bessel-uikit/issues/57)) ([309bb37](https://github.com/besselstudio/bessel-toolkit/tree/main/packages/bessel-uikit/commit/309bb37740f8f9f0e9d7cf38f09e552d4bb86d4d))
+* Add yarn test ([046299f](https://github.com/besselstudio/bessel-toolkit/tree/main/packages/bessel-uikit/commit/046299fb8ed1da41050510e97d2a6976df58a5a0))
+* Fix package name to besselstudio-libs ([0542ef8](https://github.com/besselstudio/bessel-toolkit/tree/main/packages/bessel-uikit/commit/0542ef889ecc62373be701c658ead77596ea0884))
+* React dom failure when passing unknown props to child component ([#49](https://github.com/besselstudio/bessel-toolkit/tree/main/packages/bessel-uikit/issues/49)) ([74b2f07](https://github.com/besselstudio/bessel-toolkit/tree/main/packages/bessel-uikit/commit/74b2f07fb42c7b9cc86abd1a6870ca54c3837dc4))
+* Stepper connector visibility ([#66](https://github.com/besselstudio/bessel-toolkit/tree/main/packages/bessel-uikit/issues/66)) ([478197b](https://github.com/besselstudio/bessel-toolkit/tree/main/packages/bessel-uikit/commit/478197ba4a519327aff7947877383cea4d7911ce))
+* Trustwallet test ([b429df7](https://github.com/besselstudio/bessel-toolkit/tree/main/packages/bessel-uikit/commit/b429df78746dd1cb12d4157f3dd8becb9a48e239))
+* **modal:** Change modal min width to 320px ([#60](https://github.com/besselstudio/bessel-toolkit/tree/main/packages/bessel-uikit/issues/60)) ([da49f40](https://github.com/besselstudio/bessel-toolkit/tree/main/packages/bessel-uikit/commit/da49f4070952a97bb0bbdff2087ab56474c9dbc6))
+
+
+### Features
+
+* Add Tune icon ([e97804f](https://github.com/besselstudio/bessel-toolkit/tree/main/packages/bessel-uikit/commit/e97804f88eb9d90469c3f48f446437f40b6e6a33))
+
+
+
+
+
 # [0.21.0](https://github.com/pancakeswap/pancake-toolkit/tree/master/packages/pancake-uikit/compare/@pancakeswap-libs/uikit@0.20.1...@pancakeswap-libs/uikit@0.21.0) (2021-04-06)
 
 

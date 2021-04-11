@@ -1,0 +1,29 @@
+name: lerna publish
+
+on:
+  push:
+    branches:
+      - release
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Read node version
+        run: echo ::set-output name=nodever::$(cat .nvmrc)
+        id: nvm
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '${{ steps.nvm.outputs.nodever }}'
+          registry-url: https://npm.pkg.github.com/
+      - name: Configure Git User
+        run: |
+          git config --global user.email "bessel@besselstudio.com"
+          git config --global user.name "@$GITHUB_ACTOR"
+      - run: yarn lerna publish --conventional-commits --yes

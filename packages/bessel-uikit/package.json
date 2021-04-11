@@ -1,6 +1,6 @@
 {
-  "name": "@besselstudio-libs/uikit",
-  "version": "0.21.1",
+  "name": "@besselstudio/uikit",
+  "version": "0.21.2",
   "description": "Set of UI components for pancake projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",

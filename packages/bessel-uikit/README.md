@@ -1,12 +1,12 @@
-# 🥞 Pancake UIkit
+# BesselStudio UIkit
 
-[![Version](https://img.shields.io/npm/v/@besselstudio-libs/uikit)](https://www.npmjs.com/package/@besselstudio-libs/uikit) [![Size](https://img.shields.io/bundlephobia/min/@besselstudio-libs/uikit)](https://www.npmjs.com/package/@besselstudio-libs/uikit)
+[![Version](https://img.shields.io/npm/v/@besselstudio/uikit)](https://www.npmjs.com/package/@besselstudio/uikit) [![Size](https://img.shields.io/bundlephobia/min/@besselstudio/uikit)](https://www.npmjs.com/package/@besselstudio/uikit)
 
 Pancake UIkit is a set of React components and hooks used to build pages on Pancake's apps. It also contains a theme file for dark and light mode.
 
 ## Install
 
-`yarn add @besselstudio-libs/uikit`
+`yarn add @besselstudio/uikit`
 
 ## Setup
 

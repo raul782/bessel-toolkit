@@ -1,6 +1,6 @@
 {
   "name": "@besselstudio/uikit",
-  "version": "0.22.2",
+  "version": "0.22.5",
   "description": "Set of UI components for BesselStudio projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",

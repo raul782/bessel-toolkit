@@ -31,7 +31,7 @@ export * from "./components/Toggle";
 // Hooks
 export * from "./hooks";
 
-// Widgets
+// Base Widgets
 export * from "./widgets/Modal";
 export * from "./widgets/Menu";
 export * from "./widgets/Toast";

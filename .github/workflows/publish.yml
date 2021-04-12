@@ -20,7 +20,7 @@ jobs:
           node-version: 14.x
           registry-url: https://npm.pkg.github.com/
           scope: "@raul782"
-      - name: Configure Git User
+      - name: Configure CI User
         run: |
           git config --global user.email "bessel@besselstudio.com"
           git config --global user.name "@$GITHUB_ACTOR"
@@ -38,3 +38,6 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - run: yarn lerna publish --conventional-commits --yes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_PAT }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

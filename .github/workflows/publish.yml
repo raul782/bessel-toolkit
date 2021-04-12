@@ -33,7 +33,6 @@ jobs:
           echo "//npm.pkg.github.com/:always-auth=true" >> .npmrc
           echo "//npm.pkg.github.com/:_authToken=$NPM_TOKEN" >> .npmrc
           cp .npmrc packages/bessel-uikit/.npmrc
-          npm whoami
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Install dependencies

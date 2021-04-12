@@ -28,7 +28,7 @@ export * from "./components/Tag";
 export * from "./components/Text";
 export * from "./components/Toggle";
 
-// Hooks
+// Base Hooks
 export * from "./hooks";
 
 // Base Widgets

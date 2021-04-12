@@ -2,7 +2,8 @@
   "packages": ["packages/*"],
   "version": "independent",
   "npmClient": "yarn",
-  "workspaces": true,
+  "useWorkspaces": true,
+  "npmClientArgs": ["--no-lockfile"],
   "ignoreChanges": ["**/__tests__/**", "**/*.md", "**/.storybook/**"],
   "command": {
     "version": {

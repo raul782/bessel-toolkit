@@ -8,8 +8,8 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     env:
-      NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      NPM_TOKEN: ${{ secrets.BESSEL_PAT }}
+      GITHUB_TOKEN: ${{ secrets.BESSEL_PAT }}
     steps:
       - uses: actions/checkout@v2
         with:
@@ -38,5 +38,5 @@ jobs:
         run: yarn install
       - run: yarn lerna publish --conventional-commits --yes
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_PAT }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.BESSEL_PAT }}
+          NPM_TOKEN: ${{ secrets.BESSEL_PAT }}

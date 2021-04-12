@@ -19,6 +19,7 @@ jobs:
         with:
           node-version: 14.x
           registry-url: https://npm.pkg.github.com/
+          scope: "@raul782"
       - name: Configure Git User
         run: |
           git config --global user.email "bessel@besselstudio.com"

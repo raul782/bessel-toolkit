@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com:besselstudio/bessel-toolkit.git",
+    "url": "ssh://git@github.com/besselstudio/bessel-toolkit.git",
     "directory": "packages/bessel-uikit"
   },
   "license": "MIT",

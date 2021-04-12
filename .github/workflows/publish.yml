@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 14.x
           registry-url: https://npm.pkg.github.com/
-          scope: "@raul782"
+          scope: "@besselstudio"
       - name: Configure CI User
         run: |
           git config --global user.email "bessel@besselstudio.com"
@@ -28,8 +28,7 @@ jobs:
         run: |
           yarn logout
           echo /dev/null > .npmrc
-          echo "@raul782:registry=https://npm.pkg.github.com/" > .npmrc
-          echo "registry=https://npm.pkg.github.com/" >> .npmrc
+          echo "@besselstudio:registry=https://npm.pkg.github.com/" > .npmrc
           echo "//npm.pkg.github.com/:always-auth=true" >> .npmrc
           echo "//npm.pkg.github.com/:_authToken=$NPM_TOKEN" >> .npmrc
           cp .npmrc packages/bessel-uikit/.npmrc

@@ -8,7 +8,11 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/besselstudio/bessel-toolkit/tree/main/packages/bessel-uikit",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:besselstudio/bessel-toolkit.git",
+    "directory": "packages/bessel-uikit"
+  },
   "license": "MIT",
   "scripts": {
     "start": "yarn storybook",
@@ -48,6 +52,7 @@
     "styled-system": "^5.1.5"
   },
   "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
     "access": "public"
   }
 }

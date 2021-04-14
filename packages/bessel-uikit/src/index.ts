@@ -37,6 +37,6 @@ export * from "./widgets/Menu";
 export * from "./widgets/Toast";
 export * from "./widgets/WalletModal";
 
-// Base Theme - default as ResetCSS
+// Base Theme - default: ResetCSS
 export { default as ResetCSS } from "./ResetCSS";
 export * from "./theme";
